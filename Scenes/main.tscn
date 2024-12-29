@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://da3kakyeye6hy"]
+
+[ext_resource type="PackedScene" uid="uid://3upp3qu7xe76" path="res://Scenes/map.tscn" id="1_pv7fh"]
+[ext_resource type="PackedScene" uid="uid://bm3gp7xcpbbxf" path="res://Scenes/player.tscn" id="2_apq2v"]
+[ext_resource type="PackedScene" uid="uid://bc3yflq0vv8ut" path="res://Scenes/camera_2d.tscn" id="3_4prjn"]
+
+[node name="MainScene" type="Node2D"]
+y_sort_enabled = true
+
+[node name="MapTiles" parent="." instance=ExtResource("1_pv7fh")]
+
+[node name="player" parent="." instance=ExtResource("2_apq2v")]
+position = Vector2(-1, -3)
+
+[node name="Camera2D" parent="." instance=ExtResource("3_4prjn")]
